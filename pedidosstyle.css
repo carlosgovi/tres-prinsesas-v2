@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+.conteiner{
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+    background: #f3f3f3;
+}
+
+.box{
+    
+    background: #ffffff;
+    width: auto;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 13px 0px ;  
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    color: rgba(2, 0, 0, 0.74);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*formulario entrada de datos produccion*/
+.form{
+    width: 100%;
+    height: 50%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    box-sizing: border-box;
+}
+.form input{
+    font-size: 150%;
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: rgb(77, 76, 76);
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #888787;
+}
+.form .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgba(44, 143, 255, 0.582);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: rgb(82, 82, 82);
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: rgba(44, 143, 255, 0.582);
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px){
+ .form{
+    width:55%;
+}
+
+#btn{
+    font-size: 1.3em;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border: solid 3px;
+    border-color: rgba(44, 143, 255, 0.582);
+    border-radius: 15px 15px ;
+    margin: 2%;
+    background:rgba(44, 143, 255, 0.582);
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px ;
+    
+}
+
+
+    }
+    /*Agrego menu amburgesa--------------------------------------------*/
+     /* Estilos para el ícono del Menú */
+     .icono-menu{
+       margin: 15px 15px;
+       position: relative;
+       z-index: 10;
+       position: fixed;
+       
+    }
+    
+    .icono-menu img{
+       
+       vertical-align: top;
+       width: 40px;
+       cursor: pointer;
+    }
+    
+    /* Estilos para el contenedor del Menú */
+    .cont-menu{
+       background-color: rgba(44, 143, 255, 0.582);
+       box-shadow: 2px 0px 5px 5px rgb(172, 172, 172);
+       width: 170px;
+       height: 100vh;
+       position: absolute;
+       top: 0;
+       left: 0;
+       transition: all .8s ease;
+       position: fixed;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    /* Estilos por agregar en JavaScript */
+    .active{
+       transform: translate(-600px);
+    }
+    
+    /* Estilos para el listado del Menú */
+    .cont-menu ul{
+       padding: 100px 0px 20px 0px;
+       list-style: none;
+    }
+    
+    .cont-menu ul li{
+       color: white;
+       display: block;
+       font-size: 25px;
+       text-decoration: none;
+       padding: 20px 20px;
+       cursor: pointer;
+    }
+    
+    .cont-menu ul li:hover{
+       font-size: 1.2em;
+       background-color: rgb(228,228,228);
+       color: rgb(42,42,42);
+       border-radius: 2px;
+    }
+
+
+
+    /*Agrego menu USER--------------------------------------------*/
+     /* Estilos para el ícono del USER */
+     .icono-user{
+        margin: 15px 85%;
+        position: relative;
+        z-index: 10;
+        position: fixed;
+        
+     }
+     
+     .icono-user img{
+        
+        vertical-align: top;
+        width: 40px;
+        cursor: pointer;
+     }
+     
+     /* Estilos para el contenedor del USER */
+     .cont-user{
+        
+        background-color: rgba(44, 143, 255, 0.582);
+        box-shadow: 2px 0px 5px 5px rgb(172, 172, 172);
+        width: 170px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;     
+        transition: all .8s ease;
+        position: fixed;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+     }
+     .activeuser{
+        transform: translate(+600px);
+     }
+
+     /*FORMULARIOS  DE SESION*/
+     .session input{
+        margin: 10% 5% 5% 10%;
+        width: 75%;
+        height: 2em;
+     }
+     #usuario{
+         margin-top: 60%;
+     }
+     #iniciar{
+         background-color: #52a9fa;
+         border-color: #52a9fa;
+     }
+     #resgistrarse{
+         background-color: #6cf795;
+         border-color: #6cf795;
+         border-radius: 4px 4px;
+     }
+
+
+
+
+    /*Barra baja de nav*/
+    .barraBaja {
+       margin:0;
+       width: 102%;
+ 
+     
+       list-style: none;
+       background: rgba(44, 143, 255, 0.582);
+       box-shadow: 0px 10px 13px 0px rgb(133, 133, 133);
+       color: rgb(255, 255, 255);
+       font-size: 1em;
+       text-align: end;
+       border-radius: 4px;
+       
+    }

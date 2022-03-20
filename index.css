@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.conteiner1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: rgb(241, 241, 241);
+}
+.box1,.box2,.box3{
+    background: url(fondo.jpg);
+    background-attachment: fixed;
+    margin: 5%;
+    width: 29em;
+    height: 20em;
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px;
+}
+.box1{
+    margin-top: 12%;
+}
+.box3{
+    margin-bottom: 15%;
+}
+#titulobox{
+    color: rgba(2, 0, 0, 0.74);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1.5em;
+    font-size: 5em;
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
+
+
+/*Aartado de icono whatsapp------------------------------------------------------*/
+/* Ajuste y posición del botón */
+.whatsapp-fixed img{
+    vertical-align: top;
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 23px;
+    animation-name: animWhatsapp;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Animación del botón */
+  @keyframes animWhatsapp{
+    0% {
+      transform: scale(1, 1) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.75, 0.75) rotate(7deg);
+    }
+  }
+  /*Agrego menu amburgesa--------------------------------------------*/
+  /* Estilos para el ícono del Menú */
+.icono-menu{
+    margin: 15px 15px;
+    position: relative;
+    z-index: 10;
+    
+    position: fixed;
+    
+}
+
+.icono-menu img{
+    
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgb(42,42,42);
+    box-shadow: 2px 0px 5px 5px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    position: fixed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    font-size: 2.2em;
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+    border-radius: 2px;
+}
+/*Barra baja de nav*/
+.barraBaja {
+    list-style: none;
+    height:70px ;
+    background: rgba(2, 0, 0, 0.74);
+    box-shadow: 0px 10px 20px 20px;
+    color: silver;
+    font-size: 1em;
+    text-align: end;
+    padding: 5%;
+    
+}

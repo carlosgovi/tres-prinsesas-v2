@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedidosstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="icono-menu">
+        <img src="open-menu.png" id="icono-menu">
+    </div>
+
+    <div class="cont-menu active" id="menu">
+        <ul>
+            <li> Home </li>
+            <li> Textiles </li>
+            <li> Plasticos </li>
+            <li> Varios </li>
+            <li> Nosotros </li>
+            <li> Contacto </li>
+        </ul>
+    </div>
+
+    <div class="icono-user">
+        <img src="open-user.png" id="icono-user">
+    </div>
+
+    <div class="cont-user activeuser" id="user">
+        <form action="" class="session">
+            <input type="text"  name="usuario" id="usuario" placeholder="usuario" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input type="password" name="password" id="password" placeholder="password" pattern="^[a-zA-Z0-9 ]*$" required>
+            <input type="submit" value="Iniciar" id="iniciar">
+            <input type="button" value="resgistrarse" id="resgistrarse">
+        </form>
+    </div>
+
+
+    <div class="conteiner">
+        <div class="box">
+            <form class="form">
+                
+                <input type="text" id="infecha" required>
+                <label class="lbl-nombre">
+                    <span class="text-nomb">
+                        Fecha
+                    </span>
+                </label>
+            </form>
+
+            <form class="form">        
+                <input type="text" id="inid" required>
+                <label class="lbl-nombre">
+                    <span class="text-nomb">
+                        ID
+                    </span>
+                </label>
+            </form>
+
+            <form class="form">
+                
+                <input type="text" id="inproducto" required>
+                <label class="lbl-nombre">
+                    <span class="text-nomb">
+                        Producto
+                    </span>
+                </label>
+            </form>
+
+            <form class="form">
+                
+                <input type="text" id="incantidad" required>
+                <label class="lbl-nombre">
+                    <span class="text-nomb">
+                        Cantidad
+                    </span>
+                </label>
+            </form>
+
+            <form class="form">
+                
+                <input type="text" id="inobservaciones" required>
+                <label class="lbl-nombre">
+                    <span class="text-nomb">
+                        observaciones
+                    </span>
+                </label>
+                
+            </form>
+            <button type="submit" id="btn" value="enviar">ENVIAR</button>
+            
+            
+            
+        </div>
+
+        <ul id="listaDinamica">
+            <template id="template" >
+                <div class="box">
+                    <span id="fecha"></span>
+                    <span id="id"></span>
+                    <span id="producto"></span>
+                    <span id="cantidad"></span>
+                    <span id="observaciones">-</span>
+                    
+                </div>
+        
+            </template>
+    
+    
+        </ul>
+
+    <div class="barraBaja">
+        <ul class="ulBaja">
+            <li id="cel">cel:+5493412284127    </li>
+            <li > Facebook:tresprincesas    </li>
+           <li > Instagram:tres_princesas.3    </li>
+           <li>email:lucianavillarreal2@gmail.com    </li>
+        </ul>
+
+    </div>
+    <script src="apppedidosprueva.js"></script>
+</body>
+</html>
